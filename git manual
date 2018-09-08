@@ -1,0 +1,49 @@
+github :
+create an account-->new repository-->create repository
+
+install git : 	sudo apt-get install git
+
+git init(initialized empty Git repository in /.../../.git)
+git add sniff.py
+git commit -m "comment ji dyaychi ti"
+
+git remote add origin url( of that repository)
+
+git pull origin master (if any changes are made by someone so first fetch it)
+
+git push origin master
+
+jar varchi process kam karat nasel tr:
+	clone the directory with green button
+	copy the url 
+	git clone url(which u copied)
+	folder will create with that repository name
+	add ur contents in that folder
+	git add .
+	cd directory name
+	git show (for display all the files present in the github repository)
+	git commit -m "write comment here"
+	git push origin master:
+		username
+		password
+	it will write automatically
+**********************************************************************
+nmap:
+to see all the open  ports of the machine	nmap ipaddr
+
+for each and every SYN request there is a storage allocated to the buffer 
+for each RST that buffer storage is removed
+
+stealth attack:	lapun var kara
+	syn-->acK+syn-->rst (normal process)		with rst
+	syn-->acK+syn-->repeatition(Attacking process)	without rst
+
+to bypass the firewall the FIN flag is used (karan FIN connection close karayacha kaam krto ani already connection aahe yachi suchana firewall la deto)
+
+nmap xx.xx.xx.xx-yy 	(for perticular range)
+nmap xx.xx.xx.0/subnet	(for subnet masK)
+nmap -iL list-of-ips.txt
+nmap -p ipaddr		(single port scan)
+nmap -p 1-100 192.168.1.1	(range of ports)
+nmap -p- 192.168.1.1 	(scan all 65535 ports)
+nmap -sT ipaddr		
